@@ -1,4 +1,7 @@
 # 🎙️ TypeFlow
+<p align="center">
+  <img src="https://github.com/devjuhis/typeflow/blob/main/assets/Typeflow_logo.png" width="300"/>
+</p>
 
 **Your AI-powered voice typing and writing assistant.**  
 Built with Python, [Whisper](https://github.com/openai/whisper), [Groq AI](https://groq.com/), and `customtkinter`.
@@ -55,7 +58,8 @@ api_key=your_groq_api_key
 ## 🖼️ GUI Preview
 
 <p align="center">
-  <img src="https://github.com/devjuhis/typeflow/assets/gui1.png" width="300"/>
+  <img src="https://github.com/devjuhis/typeflow/blob/main/assets/gui1.png" width="300"/>
+  <img src="https://github.com/devjuhis/typeflow/blob/main/assets/gui2.png" width="300"/>
 </p>
 
 ---
