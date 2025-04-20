@@ -34,6 +34,4 @@ def add_log(log_box, message):
         log_box.configure(state="normal")
         log_box.insert("end", message + "\n")
         log_box.configure(state="disabled")
-    else:
-        print("Log box is not initialized.")
 
