@@ -66,6 +66,7 @@ api_key=your_groq_api_key
 <p align="center">
   <img src="https://github.com/devjuhis/typeflow/blob/main/assets/gui1.png" width="300"/>
   <img src="https://github.com/devjuhis/typeflow/blob/main/assets/gui2.png" width="300"/>
+  <img src="https://github.com/devjuhis/typeflow/blob/main/assets/gui3.png" width="300"/>
 </p>
 
 ---
