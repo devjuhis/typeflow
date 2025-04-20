@@ -1,0 +1,6 @@
+{
+    "hotkey": "shift+ctrl",
+    "model": "base",
+    "ai_processing": false,
+    "device": "cpu"
+}

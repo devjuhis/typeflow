@@ -4,6 +4,10 @@ from functions.record_audio import record_audio
 from functions.transcription import transcribe_audio
 from ui.main_window import status_label, app
 pygame.mixer.init()
+from functions.settings_functions import read_settings
+
+settings = read_settings()
+hotkey = settings.get("hotkey", "ctrl+shift")
 
 def play_sound(filename):
     pygame.mixer.music.load(filename)
@@ -16,7 +20,7 @@ def wait_for_trigger_keys():
 
     while True:
 
-        if keyboard.is_pressed('ctrl+shift') and not is_recording:
+        if keyboard.is_pressed(hotkey) and not is_recording:
             is_recording = True
             play_sound("sounds/on.mp3")
             app.after(0, lambda: status_label.configure(text="🎙️Recording...", text_color="lightblue"))

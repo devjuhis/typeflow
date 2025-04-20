@@ -4,7 +4,7 @@ from states.state import state
 def create_log_window(app):
     log_window = ctk.CTkToplevel(app) 
     log_window.title("Logs")  
-    log_window.geometry("400x330")  # Lisätään hieman korkeutta napin takia
+    log_window.geometry("400x330")
 
     app.iconbitmap('./assets/Typeflow_logo.ico')
 
@@ -29,8 +29,11 @@ def create_log_window(app):
     
     return log_box
 
-def add_log(log_box, text):
-    log_box.configure(state="normal") 
-    log_box.insert("end", text + "\n")
-    log_box.see("end") 
-    log_box.configure(state="disabled")
+def add_log(log_box, message):
+    if log_box is not None:
+        log_box.configure(state="normal")
+        log_box.insert("end", message + "\n")
+        log_box.configure(state="disabled")
+    else:
+        print("Log box is not initialized.")
+
